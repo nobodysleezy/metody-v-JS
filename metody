@@ -1,0 +1,58 @@
+METODY v JS
+
+// 1. Přičítání dvou čísel
+function addNumbers(a, b) {
+    return a + b; // Vrací součet a a b
+}
+
+// 2. Změna textu v HTML elementu
+function changeText(elementId, text) {
+    document.getElementById(elementId).innerText = text; // Nastaví text elementu
+}
+
+// 3. Vytvoření pole a jeho výpis
+function createAndPrintArray() {
+    let numbers = [1, 2, 3, 4, 5]; // Vytvoření pole čísel
+    console.log(numbers); // Výpis pole do konzole
+}
+
+// 4. Kontrola, zda je číslo sudé
+function isEven(number) {
+    return number % 2 === 0; // Vrací true pro sudá čísla
+}
+
+// 5. Náhodné vybrání prvku z pole
+function getRandomElement(arr) {
+    let randomIndex = Math.floor(Math.random() * arr.length); // Vytvoření náhodného indexu
+    return arr[randomIndex]; // Vrácení prvku na náhodném indexu
+}
+
+// 6. Ověření, zda řetězec obsahuje určitý podřetězec
+function containsSubstring(mainString, subString) {
+    return mainString.indexOf(subString) !== -1; // Vrací true, pokud je podřetězec nalezen
+}
+
+// 7. Výpočet faktoriálu čísla
+function factorial(n) {
+    if (n === 0 || n === 1) {
+        return 1; // Faktoriál 0 nebo 1 je 1
+    } else {
+        return n * factorial(n - 1); // Rekurzivní výpočet faktoriálu
+    }
+}
+
+// 8. Převod prvního písmene každého slova v řetězci na velké
+function capitalizeWords(str) {
+    return str.replace(/\b\w/g, function(char) { return char.toUpperCase(); }); // Kapitalizace prvních písmen
+}
+
+// 9. Zjištění délky řetězce
+function getStringLength(str) {
+    return str.length; // Vrátí délku řetězce
+}
+
+// 10. Ověření, zda pole obsahuje konkrétní prvek
+function arrayContainsElement(arr, element) {
+    return arr.includes(element); // Vrací true, pokud pole obsahuje prvek
+}
+
